@@ -9,6 +9,6 @@
  * links. Leave it blank to keep support self-serve via the FAQ.
  */
 window.BAC_BUDDY_CONFIG = {
-  appStoreId: "",
+  appStoreId: "6654919079",
   supportEmail:"bacbuddy.app@gmail.com",
 };
