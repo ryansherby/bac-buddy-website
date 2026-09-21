@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BAC Buddy Support | Drink Responsibly</title>
+    <meta
+      name="description"
+      content="Support and product information for BAC Buddy, the drink tracker and estimated BAC companion. Track drinks, review history, and stay informed."
+    />
+    <meta name="theme-color" content="#1E2127" />
+    <link rel="canonical" href="https://bacbuddy.github.io/" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <meta property="og:title" content="BAC Buddy — Drink Responsibly" />
+    <meta
+      property="og:description"
+      content="Track your drinks, explore your drinking history, and better understand how alcohol may affect your body."
+    />
+    <meta property="og:image" content="assets/app-icon.png" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/app-icon.png" alt="" width="40" height="40" />
+          BAC Buddy
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          ☰
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#estimates">BAC Estimates</a>
+          <a href="#safety">Safety</a>
+          <a href="#support">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="nav-cta" data-app-store-link href="https://apps.apple.com">App Store</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="section-inner hero-grid">
+          <div>
+            <p class="eyebrow">iPhone drink tracker</p>
+            <h1>BAC Buddy — Drink Responsibly</h1>
+            <p class="lede">
+              Track your drinks, explore your drinking history, and better
+              understand how alcohol may affect your body with BAC Buddy.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="app-store-badge"
+                data-app-store-link
+                href="https://apps.apple.com"
+                aria-label="Download BAC Buddy on the App Store"
+              >
+                <img
+                  src="assets/download-on-the-app-store.svg"
+                  alt="Download on the App Store"
+                  width="180"
+                  height="60"
+                />
+              </a>
+              <a class="button ghost" href="#support">Get support</a>
+            </div>
+            <p class="hero-note">
+              Estimates are for information only. BAC Buddy is not a breathalyzer
+              or medical device.
+            </p>
+          </div>
+          <div class="hero-visual">
+            <img
+              class="hero-shot"
+              src="assets/app-screens.png"
+              alt="BAC Buddy on iPhone, showing estimated BAC with logged drinks and a calendar history view."
+              width="1500"
+              height="1125"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section alt">
+        <div class="section-inner">
+          <p class="section-kicker">What it does</p>
+          <h2>Everything you need to stay informed</h2>
+          <p class="section-intro">
+            BAC Buddy combines an easy-to-use drink tracker, estimated blood
+            alcohol content (BAC) calculations, and Apple Health integration
+            into one convenient app. Whether you are keeping track of a night
+            out or reviewing your alcohol consumption over time, BAC Buddy
+            helps you stay informed.
+          </p>
+          <div class="feature-grid">
+            <article class="card">
+              <h3>Track your drinks</h3>
+              <p>
+                Easily log your alcohol consumption and keep a detailed record
+                of what you have had.
+              </p>
+              <ul>
+                <li>Quick drink logging in a few taps</li>
+                <li>Favorites and recent drinks</li>
+                <li>Custom drink entries</li>
+                <li>Standard drink calculations</li>
+                <li>Timestamped entries you can edit or remove</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Estimate your BAC</h3>
+              <p>
+                Explore how your estimated BAC changes over time using a
+                mathematical model that considers your personal information,
+                alcohol consumption, and elapsed time.
+              </p>
+              <ul>
+                <li>View estimated BAC from recorded drinks</li>
+                <li>See how estimates change during a session</li>
+                <li>Understand timing and quantity effects</li>
+                <li>Learn the assumptions behind the model</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Explore your history</h3>
+              <p>
+                Your drinking history is organized so reviewing past consumption
+                stays simple.
+              </p>
+              <ul>
+                <li>Calendar view for any date</li>
+                <li>Daily drink summaries</li>
+                <li>Standard drink totals</li>
+                <li>Sort by name or standard drink quantity</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Apple Health integration</h3>
+              <p>
+                With your permission, BAC Buddy can save recorded alcohol
+                consumption to Apple Health so it sits alongside your other
+                health information.
+              </p>
+              <ul>
+                <li>Optional Health connection</li>
+                <li>Drink records can be written to Health</li>
+                <li>Estimated BAC values are not exported as measured blood alcohol content</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="estimates" class="section">
+        <div class="section-inner">
+          <p class="section-kicker">Methodology</p>
+          <h2>How estimated BAC is calculated</h2>
+          <p class="section-intro">
+            BAC Buddy provides estimates to help you understand alcohol
+            consumption, not actual blood alcohol measurements. The app uses a
+            Widmark-style model based on body information, drinks logged, and
+            time elapsed.
+          </p>
+          <ul class="method-list">
+            <li>
+              <strong>Personal factors.</strong> Estimates use information such
+              as body mass, height, and sex to approximate alcohol distribution
+              in the body.
+            </li>
+            <li>
+              <strong>Absorption.</strong> Alcohol is modeled as absorbing into
+              the bloodstream at a constant rate over 15 minutes.
+            </li>
+            <li>
+              <strong>Elimination.</strong> Alcohol is modeled as leaving the
+              bloodstream at a constant rate of 14.8 grams per hour.
+            </li>
+            <li>
+              <strong>Logging quality.</strong> Estimates only reflect drinks
+              you record. Missed, late, or inaccurate entries change the result.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="safety" class="section alt">
+        <div class="section-inner">
+          <article class="card safety">
+            <p class="section-kicker">Important safety information</p>
+            <h2>Informational only — never use estimates to drive</h2>
+            <p>
+              BAC Buddy is intended for informational and educational purposes
+              only. BAC estimates are calculated using a mathematical model and
+              may differ significantly from your actual blood alcohol
+              concentration. Individual alcohol absorption and elimination rates
+              vary, and no mathematical estimate can reliably determine your
+              level of impairment.
+            </p>
+            <ul>
+              <li>BAC Buddy is not a breathalyzer or medical device.</li>
+              <li>
+                Never use its estimates to determine whether you are safe to
+                drive, operate machinery, or make medical decisions.
+              </li>
+              <li>
+                If you have consumed alcohol, arrange a sober ride and do not
+                drive.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="support" class="section">
+        <div class="section-inner">
+          <p class="section-kicker">Support</p>
+          <h2>Help with BAC Buddy</h2>
+          <p class="section-intro">
+            This page is the official support site for BAC Buddy. Start with
+            the questions below. Track your drinks. Understand your consumption.
+            Stay informed.
+          </p>
+          <div class="faq">
+            <details>
+              <summary>How do I log a drink?</summary>
+              <p>
+                Open the app and use drink logging to record what you had. You
+                can choose a recent or favorite drink, create a custom drink,
+                and keep timestamped entries that you can edit or delete later.
+              </p>
+            </details>
+            <details>
+              <summary>Why doesn’t the estimate match a breathalyzer?</summary>
+              <p>
+                The in-app value is a mathematical estimate, not a measurement.
+                Food, medication, fatigue, body composition, and logging errors
+                can all cause large differences from a breath or blood test.
+                Never rely on the app to judge impairment.
+              </p>
+            </details>
+            <details>
+              <summary>Does BAC Buddy send estimates to Apple Health?</summary>
+              <p>
+                No. If you allow Apple Health access, BAC Buddy can save
+                recorded alcohol consumption. Estimated BAC values are not
+                exported to Apple Health as measured blood alcohol content.
+              </p>
+            </details>
+            <details>
+              <summary>Where is my drink history stored?</summary>
+              <p>
+                Drink records and profile details used for estimates are stored
+                on your device. Optional Health sync copies permitted drink
+                counts into Apple Health. See the
+                <a href="privacy.html">privacy policy</a> for details.
+              </p>
+            </details>
+            <details>
+              <summary>How do I remove ads?</summary>
+              <p>
+                BAC Buddy offers an in-app purchase to remove ads. Purchases
+                are processed by Apple. Restore purchases from the upgrade
+                screen if you reinstall the app.
+              </p>
+            </details>
+            <details>
+              <summary>How do I contact support?</summary>
+              <p>
+                Review this page first, including safety information and the
+                privacy policy. If you still need help, use the contact option
+                below.
+              </p>
+            </details>
+          </div>
+          <div class="contact-row">
+            <a class="button primary" data-app-store-link href="https://apps.apple.com">
+              View on the App Store
+            </a>
+            <a class="button ghost" data-support-email hidden href="mailto:">Email support</a>
+            <p class="hero-note" data-support-email-fallback>
+              For account or purchase questions, use Report a Problem in your
+              Apple ID settings. For app questions, check the FAQ on this page.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span data-year>2026</span> BAC Buddy. Drink responsibly.</p>
+        <div class="footer-links">
+          <a href="index.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a data-app-store-link href="https://apps.apple.com">App Store</a>
+        </div>
+      </div>
+    </footer>
+    <script src="config.js"></script>
+    <script src="assets/site.js"></script>
+  </body>
+</html>
