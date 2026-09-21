@@ -10,5 +10,5 @@
  */
 window.BAC_BUDDY_CONFIG = {
   appStoreId: "6654919079",
-  supportEmail:"bacbuddy.app@gmail.com",
+  supportEmail: "bacbuddy.app@gmail.com",
 };

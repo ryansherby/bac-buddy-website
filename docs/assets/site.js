@@ -6,6 +6,7 @@
     ? "https://apps.apple.com/app/id" + encodeURIComponent(appStoreId)
     : "https://apps.apple.com/us/search?term=" +
       encodeURIComponent("BAC Buddy Drink Responsibly");
+  const mailtoUrl = supportEmail ? "mailto:" + supportEmail : "";
 
   document.querySelectorAll("[data-app-store-link]").forEach(function (el) {
     el.setAttribute("href", appStoreUrl);
@@ -18,11 +19,18 @@
     }
     el.hidden = false;
     if (el.tagName === "A") {
-      el.setAttribute("href", "mailto:" + supportEmail);
+      el.setAttribute("href", mailtoUrl);
       if (!el.textContent.trim()) {
         el.textContent = supportEmail;
       }
+      return;
     }
+    el.querySelectorAll("a").forEach(function (link) {
+      link.setAttribute("href", mailtoUrl);
+      if (!link.textContent.trim()) {
+        link.textContent = supportEmail;
+      }
+    });
   });
 
   document.querySelectorAll("[data-support-email-fallback]").forEach(function (el) {
